@@ -23,7 +23,8 @@ class ListaSecuencial:
                 self.__arreglo[pos-1] = x
                 self.__tope += 1
                 return x
-            # si el arreglo tiene 5 elementos entonces:
+
+# si el arreglo tiene 5 elementos entonces:
 # tope = 4
 # si quiero insertar en la posicion 3 seria en indice 2 entonces:
 # 3-2= 1 que es la posicion a donde anterior donde voy a insertar es decir que el 
