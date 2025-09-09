@@ -62,7 +62,6 @@ class ListaSecuencial:
 
 
 def prueba_insert(num):
-    lista = ListaSecuencial(5)
     
     while num >= 0:
         num=int(input("ingrese numero positivo a insertar"))
@@ -70,10 +69,17 @@ def prueba_insert(num):
         lista.insertar(num, i)
         
     
-    print("La lista es: ")
-    lista.mostrar()
+    # print("La lista es: ")
+    # lista.mostrar()
 
 if __name__ == "__main__":
+    lista = ListaSecuencial(5)
     print("Ingrese un numero entero positivo para empezar: ")
     n = int(input())
     prueba_insert(n)
+    print("La lista es: ")
+    lista.mostrar()
+    # print ("Ingresar posicion del elemento a recuperar")
+    # pos_recu = int(input())
+    # lista.recuperar(pos_recu)
+    

@@ -22,6 +22,7 @@ class PilaEncadenada:
 
     def __init__(self):
         self.__tope = None
+        self.__cantidad=0
 
     def vacia(self):
         return self.__tope is None
@@ -43,3 +44,18 @@ class PilaEncadenada:
         while aux is not None:
             print(int(aux.getitem()))
             aux = aux.getSiguiente()
+
+def conversionabinario(num):
+    pila = PilaEncadenada()
+    while num >= 2:
+        resto = num % 2
+        pila.insertar(int(resto))
+        num = num // 2
+    pila.insertar(num)
+    print("El numero en binario es: ")
+    pila.mostrar()
+
+if __name__ == "__main__":
+    print("Ingrese un numero entero a convertir: ")
+    n = int(input())
+    conversionabinario(n)
